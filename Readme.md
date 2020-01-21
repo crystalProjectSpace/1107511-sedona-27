@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [alisha rushits](https://up.htmlacademy.ru/htmlcss/27/user/1107511).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Карташов`. (https://htmlacademy.ru/profile/id77080)
 
 ---
 
