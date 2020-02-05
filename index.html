@@ -84,15 +84,30 @@
             <p>Заинтересовались?</p>
             <p>Укажите предполагаемые даты поездки,
                 <br> и мы покажем вам лучшие предложения в Седоне</p>
-            <button type="button">Поиск гостиницы в Седоне</button>
-            <!-- Тут будет форма -->
-            <label for="">Дата заезда</label>
-            <label for="">Дата выезда</label>
-            <label for="">Взрослые</label>
-            <label for="">Дети</label>
-            <button type="button">Найти</button>
+            <button type="submit">Поиск гостиницы в Седоне</button>
+            <form>
+                <p>
+                    <label for="arrival">Дата заезда</label>
+                    <input type="text" name="arrival-date" id="arrival" placeholder="24 апреля 2017">
+                </p>
+                <p>
+                    <label for="departure">Дата выезда</label>
+                    <input type="text" name="departure-date" id="departure" placeholder="4 июля 2017">
+                </p>
+                <p>
+                    <label for="adult">Взрослые</label>
+                    <span class="less">-</span>
+                    <input type="number" name="adult-number" id="adult" min="1" max="10" step="1" value="2">
+                    <span class="more">+</span>
+                    <label for="child">Дети</label>
+                    <span class="less">-</span>
+                    <input type="number" name="child-number" id="child" min="1" max="10" step="1" value="0">
+                    <span class="more">+</span>
+                </p>
+                <button type="submit">Найти</button>
+            </form>
         </section>
-          <img src="img/map.png" width="1200" height="594" alt="Карта">
+        <img src="img/map.png" width="1200" height="594" alt="Карта">
     </main>
     <footer>
         <a href="#">#VISITSEDONA</a>

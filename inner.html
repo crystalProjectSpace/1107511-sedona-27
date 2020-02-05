@@ -22,7 +22,59 @@
         <h1>Выбор отеля</h1>
         <section>
             <h2>Фильтр по отелям</h2>
-            <!--<form> Тут будет форма выбора отеля </form> -->
+            <form class="filter" method="get">
+                <fieldset>
+                    <legend>Инфраструктура</legend>
+                  <ul>
+                    <li>
+                        <label>
+                            <input type="checkbox" checked>Бассейн</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">Парковка</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">WI-FI</label>
+                    </li>
+                  </ul>
+                </fieldset>
+            </form>
+            <form class="filter" method="get">
+                <fieldset>
+                    <legend>Тип жилья</legend>
+                  <ul>
+                    <li>
+                        <label>
+                            <input type="checkbox" checked>Гостиница</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" checked>Мотель</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" checked>Апартаменты</label>
+                    </li>
+                  </ul>  
+                </fieldset>
+            </form>
+            <form>
+                <div class="range-slider">
+                    <span>Стоимость в сутки(Р):</span>
+                    <label for="range-min">От</label>
+                    <input type="number" name="min" value="0" id="range-min">
+                    <label for="range-max">До</label>
+                    <input type="number" name="max" value="3000" id="range-max">
+                    <div class="range-slider-track">
+                        <!--   <div class="range-slider-pin-min"><img src="img/svg-sedona/filter-button.svg"></div>
+            <div class="range-slider-pin-max"><img src="img/svg-sedona/filter-button.svg"></div> -->
+                    </div>
+                </div>
+                <button type="submit">Показать</button>
+            </form>
+
         </section>
         <section>
             <p>Найдено:<span>3</span></p>
