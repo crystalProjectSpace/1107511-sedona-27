@@ -56,7 +56,7 @@
                 </div>
                 <li>
                     <h2>Там есть <br>
-         мост дьявола</h2>
+                  мост дьявола</h2>
                     <span>-№2-</span>
                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </li>
@@ -84,30 +84,32 @@
             <p>Заинтересовались?</p>
             <p>Укажите предполагаемые даты поездки,
                 <br> и мы покажем вам лучшие предложения в Седоне</p>
-            <button type="submit">Поиск гостиницы в Седоне</button>
-            <form>
+            <button type="button">Поиск гостиницы в Седоне</button>
+            <form class="search-hotels" action="https://echo.htmlacademy.ru" method="get">
                 <p>
                     <label for="arrival">Дата заезда</label>
                     <input type="text" name="arrival-date" id="arrival" placeholder="24 апреля 2017">
+                    <button><img src="img/svg-sedona/calendar.svg" alt="Выбрать дату на календаре"></button>
                 </p>
                 <p>
                     <label for="departure">Дата выезда</label>
                     <input type="text" name="departure-date" id="departure" placeholder="4 июля 2017">
+                    <button><img src="img/svg-sedona/calendar.svg" alt="Выбрать дату на календаре"></button>
                 </p>
                 <p>
                     <label for="adult">Взрослые</label>
-                    <span class="less">-</span>
-                    <input type="number" name="adult-number" id="adult" min="1" max="10" step="1" value="2">
-                    <span class="more">+</span>
+                    <button type="button" class="less">-</button>
+                    <input type="number" name="adult-number" id="adult" min="0" max="100" step="1" value="2">
+                    <button type="button" class="more">+</button>
                     <label for="child">Дети</label>
-                    <span class="less">-</span>
-                    <input type="number" name="child-number" id="child" min="1" max="10" step="1" value="0">
-                    <span class="more">+</span>
+                    <button type="button" class="less">-</button>
+                    <input type="number" name="child-number" id="child" min="0" max="100" step="1" value="0">
+                    <button type="button" class="more">+</button>
                 </p>
                 <button type="submit">Найти</button>
             </form>
         </section>
-        <img src="img/map.png" width="1200" height="594" alt="Карта">
+        <img src="img/map.png" width="1200" height="594" alt="США, штат Аризона, северная часть долины Верде, Седона">
     </main>
     <footer>
         <a href="#">#VISITSEDONA</a>

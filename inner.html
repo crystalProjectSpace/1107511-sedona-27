@@ -22,7 +22,7 @@
         <h1>Выбор отеля</h1>
         <section>
             <h2>Фильтр по отелям</h2>
-            <form class="filter" method="get">
+            <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
                     <legend>Инфраструктура</legend>
                   <ul>
@@ -40,8 +40,6 @@
                     </li>
                   </ul>
                 </fieldset>
-            </form>
-            <form class="filter" method="get">
                 <fieldset>
                     <legend>Тип жилья</legend>
                   <ul>
@@ -57,12 +55,11 @@
                         <label>
                             <input type="checkbox" checked>Апартаменты</label>
                     </li>
-                  </ul>  
+                  </ul>
                 </fieldset>
-            </form>
-            <form>
-                <div class="range-slider">
-                    <span>Стоимость в сутки(Р):</span>
+                <fieldset>
+                  <legend>Стоимость в сутки(Р):</legend>
+                  <div class="range-slider">
                     <label for="range-min">От</label>
                     <input type="number" name="min" value="0" id="range-min">
                     <label for="range-max">До</label>
@@ -71,8 +68,9 @@
                         <!--   <div class="range-slider-pin-min"><img src="img/svg-sedona/filter-button.svg"></div>
             <div class="range-slider-pin-max"><img src="img/svg-sedona/filter-button.svg"></div> -->
                     </div>
-                </div>
-                <button type="submit">Показать</button>
+                  </div>
+                  <button type="submit">Показать</button>
+                </fieldset>
             </form>
 
         </section>
