@@ -1,0 +1,310 @@
+/* Позиционирование */
+
+/*Блочная модель*/
+
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: PT Sans, sans-serif;
+  text-transform: uppercase;
+
+
+  background-color: #808080;
+  background-image: url("img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Оформление */
+
+.main-footer a,
+.list a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.button-show {
+  width: 133px;
+  height: 32px;
+  border: 2px solid #ffffff;
+  background-color: none;
+}
+
+.button-show:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.button-details {
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+}
+
+.button-details:hover {
+  background-color: #669ec0;
+}
+
+.button-details:active {
+  color: rgba(225, 225, 225, 0.3);
+  background-color: #5496bd;
+}
+
+.button-reservation {
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+}
+
+.button-reservation:hover {
+  background-color: #604e43;
+}
+
+.button-reservation:active {
+  color: rgba(225, 225, 225, 0.3);
+  background-color: #503e33;
+}
+.rating {
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+}
+
+.preview {
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+}
+
+.preview:hover {
+  background-color: #604e43;
+}
+
+.preview:active {
+  color: rgba(225, 225, 225, 0.3);
+  background-color: #766357;
+}
+
+.search {
+  width: 558px;
+  height: 58px;
+  background-color: #81b3d2;
+}
+
+.search:hover {
+  background-color: #669ec0;
+}
+
+.search:active {
+  color: rgba(225, 225, 225, 0.3);
+  background-color: #5496bd;
+}
+
+.date-input {
+  width: 346px:auto;
+  height: 38px;
+  background-color: f2f2f2;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+}
+
+.date-input:hover {
+  background-color: #ebebeb;
+}
+
+.date-input:focus {
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+/* Типографика */
+
+.slogan,
+.preview,
+.search,
+.result,
+.hotels-name,
+.footer-contacts {
+font-size: 21px;
+font-weight: 700;
+line-height: 26px;
+text-align: center;
+color: #000000;
+}
+
+.hotels-name:hover {
+  color: #81b3d2;
+}
+
+.hotels-name:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.preview,
+.search {
+  color: #ffffff;
+}
+
+.result,
+.hotels-name {
+  text-align: left;
+}
+
+.text,
+.text-checkbox,
+.text.white,
+.range,
+.range-number,
+.button-hotels,
+.rating {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hotels-text,
+.button-hotels {
+  text-align: left;
+}
+
+.button-hotels {
+  font-weight: 700;
+}
+
+.text {
+  color: #333333;
+}
+
+.rating {
+  color: #666666;
+}
+
+.nav-item,
+.advantages,
+.text-form,
+.footer-copyright {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+}
+
+.nav-item:hover {
+  color: #81b3d2;
+}
+
+.nav-item:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-item-current {
+  color: #766357;
+}
+
+.nav-item,
+.text-form-number {
+  text-align: center;
+}
+
+.advantages,
+.footer-copyright {
+  font-weight: 400;
+  text-align: center;
+}
+
+.advantages {
+  color: #333333;
+}
+
+.lead {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+.lead.white {
+  color: #ffffff;
+}
+
+.sorting {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+}
+
+.sorting-price {
+  color: #81b3d2;
+}
+
+.sorting-type,
+.sorting-rating {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+}
+
+.sorting-type:hover,
+.sorting-rating:hover {
+  color: #81b3d2;
+  text-decoration: underline;
+}
+
+.sorting-type:active,
+.sorting-rating:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.offer {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+}
+
+.lead-form {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+  color: #ffffff;
+}
