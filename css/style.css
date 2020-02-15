@@ -25,8 +25,11 @@ img {
 
 /* Оформление */
 
-.main-footer a,
-.list a {
+.main-footer-link,
+.hotels-name,
+.hotels-button,
+.sorting-price,
+.nav-item {
   text-decoration: none;
 }
 
@@ -34,11 +37,17 @@ img {
   display: none;
 }
 
-.filter fieldset {
+.hotels-filter-fieldset {
   border: none;
 }
 
-.list {
+.nav-list,
+.advantages-list,
+.sub-advantages-list,
+.footer-social-list,
+.hotels-filter-list,
+.sorting-list,
+.hotels-list {
   list-style: none;
 }
 
@@ -83,7 +92,7 @@ img {
   color: rgba(225, 225, 225, 0.3);
   background-color: #503e33;
 }
-.rating {
+.hotels-rating {
   width: 110px;
   height: 27px;
   background-color: #f2f2f2;
@@ -93,6 +102,7 @@ img {
   width: 568px;
   height: 86px;
   background-color: #766357;
+  border: none;
 }
 
 .preview:hover {
@@ -108,6 +118,7 @@ img {
   width: 558px;
   height: 58px;
   background-color: #81b3d2;
+  border: none;
 }
 
 .search:hover {
@@ -119,8 +130,8 @@ img {
   background-color: #5496bd;
 }
 
-.date-input {
-  width: 346px:auto;
+.search-hotels-input {
+  width: 346px;
   height: 38px;
   background-color: f2f2f2;
 
@@ -132,11 +143,11 @@ img {
   color: #000000;
 }
 
-.date-input:hover {
+.search-hotels-input:hover {
   background-color: #ebebeb;
 }
 
-.date-input:focus {
+.search-hotels-input:focus {
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
 }
@@ -146,7 +157,7 @@ img {
 .slogan,
 .preview,
 .search,
-.result,
+.sorting-result,
 .hotels-name,
 .footer-contacts {
 font-size: 21px;
@@ -169,18 +180,26 @@ color: #000000;
   color: #ffffff;
 }
 
-.result,
+.sorting-result,
 .hotels-name {
   text-align: left;
 }
 
-.text,
-.text-checkbox,
-.text.white,
-.range,
-.range-number,
-.button-hotels,
-.rating {
+.advantages,
+.advantages-text,
+.advantages-text.white,
+.sub-advantages-text,
+.hotels-text,
+.hotels-filter-item,
+.button-show,
+.white,
+.range-label-min,
+.range-label-max,
+.range-number-min,
+.range-number-min,
+.hotels-button,
+.hotels-rating,
+.figure.white {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -189,25 +208,32 @@ color: #000000;
 }
 
 .hotels-text,
-.button-hotels {
+.hotels-filter-item,
+.button-show,
+.hotels-button {
   text-align: left;
 }
 
-.button-hotels {
+.hotels-button {
   font-weight: 700;
 }
 
-.text {
+.advantages,
+.advantages-text,
+.sub-advantages-text,
+.hotels-text,
+.figure {
   color: #333333;
 }
 
-.rating {
+.hotels-rating {
   color: #666666;
 }
 
 .nav-item,
 .advantages,
-.text-form,
+.search-hotels-label,
+.search-hotels-number,
 .footer-copyright {
   font-size: 14px;
   font-weight: 700;
@@ -243,7 +269,8 @@ color: #000000;
   color: #333333;
 }
 
-.lead {
+.advantages-title,
+.sub-advantages-title {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
@@ -251,11 +278,12 @@ color: #000000;
   color: #000000;
 }
 
-.lead.white {
+.advantages-title.white {
   color: #ffffff;
 }
 
-.sorting {
+.sorting-title,
+.sorting-list-link {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -270,13 +298,13 @@ color: #000000;
 .sorting-type,
 .sorting-rating {
   color: rgba(0, 0, 0, 0.3);
-  text-decoration: underline;
+  text-decoration-style: dotted;
 }
 
 .sorting-type:hover,
 .sorting-rating:hover {
   color: #81b3d2;
-  text-decoration: underline;
+  text-decoration-style: dotted;
 }
 
 .sorting-type:active,
@@ -285,7 +313,7 @@ color: #000000;
   text-decoration: none;
 }
 
-.subtitle {
+.interest {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -301,7 +329,7 @@ color: #000000;
   color: #333333;
 }
 
-.lead-form {
+.hotels-filter-title {
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
