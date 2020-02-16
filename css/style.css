@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: PT Sans, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   text-transform: uppercase;
 
   background-color: #808080;
@@ -37,12 +37,24 @@ img {
 .hotels-name,
 .hotels-button,
 .sorting-price,
+.footer-contacts,
 .nav-item {
   text-decoration: none;
 }
 
 .visually-hidden {
   display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .hotels-filter-fieldset {
@@ -262,7 +274,7 @@ color: #000000;
 .advantages,
 .search-hotels-label,
 .search-hotels-number,
-.footer-copyright {
+.footer-copyright-button {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -288,7 +300,7 @@ color: #000000;
 }
 
 .advantages,
-.footer-copyright {
+.footer-copyright-button {
   font-weight: 400;
   text-align: center;
 }
