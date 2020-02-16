@@ -14,9 +14,17 @@ body {
   text-transform: uppercase;
 
   background-color: #808080;
+}
+
+.welcome-to-sedona {
   background-image: url("../img/background-photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.welcome {
+  margin-left: 410px;
+  margin-right: 411px;
 }
 
 img {
