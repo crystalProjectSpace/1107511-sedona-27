@@ -5,6 +5,7 @@
 html {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -12,9 +13,8 @@ body {
   font-family: PT Sans, sans-serif;
   text-transform: uppercase;
 
-
   background-color: #808080;
-  background-image: url("img/background-photo.jpg");
+  background-image: url("../img/background-photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -152,6 +152,26 @@ img {
   background-color: #ffffff;
 }
 
+.search-hotels-input:-ms-input-placeholder {
+  color: #000000;
+}
+
+.search-hotels-input::-ms-input-placeholder {
+  color: #000000;
+}
+
+.search-hotels-input::-webkit-input-placeholder {
+  color: #000000;
+}
+.search-hotels-input:-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+.search-hotels-input::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
 /* Типографика */
 
 .slogan,
@@ -255,7 +275,7 @@ color: #000000;
 }
 
 .nav-item,
-.text-form-number {
+.search-hotels-number {
   text-align: center;
 }
 
