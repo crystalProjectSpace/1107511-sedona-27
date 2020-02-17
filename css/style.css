@@ -23,8 +23,7 @@ body {
 }
 
 .welcome {
-  margin-left: 410px;
-  margin-right: 411px;
+  margin-left: 491px;
 }
 
 img {
@@ -75,7 +74,8 @@ img {
   width: 133px;
   height: 32px;
   border: 2px solid #ffffff;
-  background-color: none;
+  background-color: transparent;
+  border-radius: 2px;
 }
 
 .button-show:hover {
