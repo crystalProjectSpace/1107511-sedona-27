@@ -494,7 +494,7 @@ color: #000000;
 .sub-advantages-list {
   display: flex;
   flex-direction: row;
-  width: 1200px;
+  flex-basis: 1200px;
   list-style: none;
   outline: 2px solid steelblue;
 }
