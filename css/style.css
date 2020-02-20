@@ -13,12 +13,14 @@ body {
   font-family: PT Sans, Arial, sans-serif;
   text-transform: uppercase;
 
-  background-color: #808080;
+  background-color: #f2f2f2;
+  background-size: 1280px;
 }
 
 .welcome-to-sedona {
-  background-image: url("../img/background-photo.jpg");
-  background-position: top center;
+  background:
+  url("../img/svg-sedona/intro-mask.svg") 0% 100%,
+  url("../img/background-photo.jpg") 50% 0%;
   background-repeat: no-repeat;
 }
 
@@ -375,4 +377,124 @@ color: #000000;
   line-height: 21px;
   text-align: left;
   color: #ffffff;
+}
+
+/* Сетки */
+
+.index-page {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  display: flex;
+  width: 1200px;
+  height: 56px;
+  margin: auto;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  background-color: #ffffff;
+  margin-top: 0;
+  width: 1200px;
+  height: 56px;
+  justify-content: space-around;
+  align-items: center;
+  outline: 2px solid red;
+}
+
+.nav-item {
+  display: flex;
+  width: 239px;
+  min-height: 56px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 128, 128, 0.6);
+  outline: 2px solid olive;
+}
+
+.logo {
+  width: 140px;
+  height: 71px;
+  margin: auto;
+  position: absolute;
+}
+
+.info {
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+  min-height: 261px;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid olive;
+}
+
+.slogan {
+  width: 440px;
+  min-height: 48px;
+  outline: 2px solid olive;
+}
+
+.advantages {
+  width: 489px;
+  min-height: 13px;
+  outline: 2px solid olive;
+}
+
+.advantages-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1200px;
+  min-height: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  outline: 2px solid green;
+}
+
+.bg-blue {
+  width: 400px;
+  min-height: 256px;
+  background-color: #81b3d2;
+  outline: 2px solid red;
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.bg-gray {
+  width: 400px;
+  min-height: 256px;
+  background-color: #eeeeee;
+  outline: 2px solid red;
+  padding: 0;
+  margin: 0;
+}
+
+.pic-sedona {
+  display: block;
+  width: 800px;
+}
+
+.pic-bridge {
+  display: block;
+  width: 800px;
+}
+
+.sub-advantages-list {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  list-style: none;
+  outline: 2px solid steelblue;
 }
