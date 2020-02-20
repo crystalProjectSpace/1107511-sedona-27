@@ -444,7 +444,7 @@ color: #000000;
   outline: 2px solid olive;
 }
 
-.advantages-row {
+.advantages-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
