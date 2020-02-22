@@ -18,14 +18,12 @@ body {
 }
 
 .welcome-to-sedona {
+  display: flex;
   background:
   url("../img/svg-sedona/intro-mask.svg") 0% 100%,
   url("../img/background-photo.jpg") 50% 0%;
   background-repeat: no-repeat;
-}
-
-.welcome {
-  margin-left: 491px;
+  justify-content: center;
 }
 
 img {
@@ -381,10 +379,18 @@ color: #000000;
 
 /* Сетки */
 
-.index-page {
+.index-page,
+.inner-page {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+}
+
+.inner-page {
+  background: url(../img/filter-background.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #A9A9A9;
 }
 
 .main-navigation {
@@ -396,11 +402,9 @@ color: #000000;
 
 .nav-list {
   display: flex;
-  background-color: #ffffff;
-  margin-top: 0;
   width: 1200px;
+  padding: 0;
   justify-content: space-around;
-  align-items: center;
   outline: 2px solid red;
 }
 
@@ -409,7 +413,6 @@ color: #000000;
   width: 239px;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 128, 128, 0.6);
   outline: 2px solid olive;
 }
 
@@ -422,9 +425,7 @@ color: #000000;
 
 .info {
   display: flex;
-  background-color: #ffffff;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   outline: 2px solid olive;
 }
@@ -443,8 +444,6 @@ color: #000000;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1200px;
-  margin: 0 auto;
   padding: 0;
   outline: 2px solid green;
 }
@@ -492,6 +491,10 @@ color: #000000;
   padding: 0;
   }
 
+.block-over-map {
+  width: 1200px;
+  outline: 2px solid darkcyan;
+}
 .block-over-form {
   width: 434px;
   min-height: 96px;
@@ -516,9 +519,7 @@ color: #000000;
 
 .main-footer {
   display: flex;
-  width: 1200px;
-  margin: auto;
-  justify-content: center;
+  background-color: #ffffff;
 }
 
 .contacts,
@@ -526,4 +527,86 @@ color: #000000;
 .footer-copyright {
   width: 33%;
   outline: 2px solid orange;
+}
+
+.hotels-filter {
+  display: flex;
+  width: 1200px;
+  outline: 2px solid red;
+}
+
+.hotels-filter-fieldset {
+  outline: 2px solid orange;
+}
+
+.hotels-filter-list {
+  padding: 0;
+}
+
+.sorting {
+  display: flex;
+  width: 1200px;
+  min-height: 86px;
+  justify-content: space-between;
+  align-items: baseline;
+  outline: 2px solid lightgreen;
+  background-color: #ffffff;
+}
+
+.sorting-result,
+.sorting-title,
+.sorting-list {
+  outline: 2px solid red;
+}
+
+.sorting-list {
+  display: flex;
+  width: 1000px;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.hotels-list {
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  outline: 2px solid violet;
+}
+
+.hotels-item {
+  display: flex;
+  width: inherit;
+  align-items: center;
+  outline: 2px solid darkkhaki;
+}
+
+.hotels-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 270px;
+  outline: 2px solid gold;
+  padding: 0;
+}
+
+.hotels-name h3{
+   outline: 2px solid darkcyan;
+   padding: 0;
+   margin: 0;
+}
+
+.hotels-rating-right {
+  display: flex;
+  flex-direction: column;
+  outline: 2px solid tomato;
+}
+
+.type {
+  outline: 2px solid black;
+}
+
+.price {
+  outline: 2px solid red;
 }
