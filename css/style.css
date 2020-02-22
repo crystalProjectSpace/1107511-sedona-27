@@ -384,12 +384,12 @@ color: #000000;
 .index-page {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .main-navigation {
   display: flex;
   width: 1200px;
-  height: 56px;
   margin: auto;
   justify-content: center;
 }
@@ -399,7 +399,6 @@ color: #000000;
   background-color: #ffffff;
   margin-top: 0;
   width: 1200px;
-  height: 56px;
   justify-content: space-around;
   align-items: center;
   outline: 2px solid red;
@@ -408,7 +407,6 @@ color: #000000;
 .nav-item {
   display: flex;
   width: 239px;
-  min-height: 56px;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 128, 128, 0.6);
@@ -426,7 +424,6 @@ color: #000000;
   display: flex;
   background-color: #ffffff;
   flex-direction: column;
-  min-height: 261px;
   justify-content: center;
   align-items: center;
   outline: 2px solid olive;
@@ -434,13 +431,11 @@ color: #000000;
 
 .slogan {
   width: 440px;
-  min-height: 48px;
   outline: 2px solid olive;
 }
 
 .advantages {
   width: 489px;
-  min-height: 13px;
   outline: 2px solid olive;
 }
 
@@ -449,7 +444,6 @@ color: #000000;
   flex-direction: row;
   flex-wrap: wrap;
   width: 1200px;
-  min-height: 1100px;
   margin: 0 auto;
   padding: 0;
   outline: 2px solid green;
@@ -457,7 +451,6 @@ color: #000000;
 
 .bg-blue {
   width: 400px;
-  min-height: 256px;
   background-color: #81b3d2;
   outline: 2px solid red;
   padding: 0;
@@ -474,7 +467,6 @@ color: #000000;
 
 .bg-gray {
   width: 400px;
-  min-height: 256px;
   background-color: #eeeeee;
   outline: 2px solid red;
   padding: 0;
@@ -494,7 +486,44 @@ color: #000000;
 .sub-advantages-list {
   display: flex;
   flex-direction: row;
-  flex-basis: 1200px;
   list-style: none;
   outline: 2px solid steelblue;
+  margin: 0;
+  padding: 0;
+  }
+
+.block-over-form {
+  width: 434px;
+  min-height: 96px;
+  margin-left: 383px;
+  margin-right: 383px;
+  outline: 2px solid olive;
+}
+
+.preview {
+  width: 586px;
+  margin: 0 auto;
+  margin-left: 316px;
+  margin-right: 316px;
+}
+
+.search-hotels {
+  width: 586px;
+  outline: 2px solid orange;
+  margin-left: 316px;
+  margin-right: 316px;
+}
+
+.main-footer {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  justify-content: center;
+}
+
+.contacts,
+.footer-social-list,
+.footer-copyright {
+  width: 33%;
+  outline: 2px solid orange;
 }
