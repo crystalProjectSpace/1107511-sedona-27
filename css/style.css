@@ -20,14 +20,15 @@ body {
 .welcome-to-sedona {
   display: flex;
   background:
-  url("../img/svg-sedona/intro-mask.svg") 0% 100%,
-  url("../img/background-photo.jpg") 50% 0%;
+  url("../img/svg-sedona/intro-mask.svg") 0% 101%,
+  url("../img/background-photo.jpg") 0% 28%;
   background-repeat: no-repeat;
   justify-content: center;
 }
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 /* Оформление */
@@ -270,7 +271,7 @@ color: #000000;
   color: #666666;
 }
 
-.nav-item,
+.nav-item a,
 .advantages,
 .search-hotels-label,
 .search-hotels-number,
@@ -282,19 +283,19 @@ color: #000000;
   color: #000000;
 }
 
-.nav-item:hover {
+.nav-item a:hover {
   color: #81b3d2;
 }
 
-.nav-item:active {
+.nav-item a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.nav-item-current {
+.nav-item-current a{
   color: #766357;
 }
 
-.nav-item,
+.nav-item a,
 .search-hotels-number {
   text-align: center;
 }
@@ -395,18 +396,16 @@ color: #000000;
 
 .nav-list {
   display: flex;
-  width: 1200px;
+  width: 1056px;
+  margin: 0;
   padding: 0;
-  justify-content: space-around;
-  outline: 2px solid red;
 }
 
 .nav-item {
-  display: flex;
   width: 239px;
-  justify-content: center;
-  align-items: center;
-  outline: 2px solid olive;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .logo {
@@ -420,16 +419,25 @@ color: #000000;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 216px;
   outline: 2px solid olive;
 }
 
 .slogan {
+  margin-top: 61px;
+  margin-bottom: 20px;
+  margin-left: 380px;
+  margin-right: 380px;
   width: 440px;
   outline: 2px solid olive;
 }
 
 .advantages {
   width: 489px;
+  margin-bottom: 56px;
+  margin-left: 355px;
+  margin-right: 356px;
+  padding: 0;
   outline: 2px solid olive;
 }
 
@@ -607,4 +615,28 @@ color: #000000;
 
 .price {
   outline: 2px solid red;
+}
+
+/*Микросетки*/
+.nav-item:nth-last-child(2) {
+  margin-left: 100px;
+}
+.nav-item:last-child,
+.nav-item:nth-last-child(2) {
+  text-align: right;
+}
+
+.figure,
+.figure.white {
+  display: block;
+  text-align: center;
+}
+
+.welcome {
+  width: 459px;
+  height: 353px;
+  margin-left: 370px;
+  margin-right: 371px;
+  margin-top: 76px;
+  margin-bottom: 79px;
 }
