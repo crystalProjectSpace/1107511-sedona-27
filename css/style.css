@@ -3,7 +3,13 @@
 /*Блочная модель*/
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -360,6 +366,7 @@ color: #000000;
   line-height: 36px;
   text-align: center;
   color: #000000;
+  margin-top: 0;
 }
 
 .offer {
@@ -434,6 +441,7 @@ color: #000000;
 
 .advantages {
   width: 489px;
+  margin-top: 10px;
   margin-bottom: 56px;
   margin-left: 355px;
   margin-right: 356px;
@@ -445,6 +453,7 @@ color: #000000;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 0;
   padding: 0;
   outline: 2px solid green;
 }
@@ -453,7 +462,7 @@ color: #000000;
   width: 400px;
   background-color: #81b3d2;
   outline: 2px solid red;
-  padding: 0;
+  padding-top: 0;
   margin: 0;
 }
 
@@ -476,11 +485,13 @@ color: #000000;
 .pic-sedona {
   display: block;
   width: 800px;
+  font-size: 0;
 }
 
 .pic-bridge {
   display: block;
   width: 800px;
+  font-size: 0;
 }
 
 .sub-advantages-list {
@@ -490,6 +501,7 @@ color: #000000;
   outline: 2px solid steelblue;
   margin: 0;
   padding: 0;
+  min-height: 332px;
   }
 
 .block-over-map {
@@ -499,12 +511,16 @@ color: #000000;
 .block-over-form {
   width: 434px;
   min-height: 96px;
+  margin-top: 0;
+  margin-bottom: 26px;
   margin-left: 383px;
   margin-right: 383px;
+  padding-top: 28.5px;
   outline: 2px solid olive;
 }
 
 .preview {
+  position: relative;
   width: 586px;
   margin: 0 auto;
   margin-left: 316px;
@@ -512,10 +528,12 @@ color: #000000;
 }
 
 .search-hotels {
+  position: absolute;
   width: 586px;
   outline: 2px solid orange;
   margin-left: 316px;
   margin-right: 316px;
+  background: #ffffff;
 }
 
 .main-footer {
@@ -639,4 +657,129 @@ color: #000000;
   margin-right: 371px;
   margin-top: 76px;
   margin-bottom: 79px;
+}
+
+.bg-blue h2,
+.bg-gray h2 {
+  margin-top: 46px;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.reverse h2 {
+  padding: 0;
+}
+
+.sub-advantages-item {
+  width: 400px;
+  position: relative;
+  padding-top: 145px;
+}
+
+.sub-advantages-item .home::before {
+  content: "";
+
+  position: absolute;
+  background-image: url(../img/svg-sedona/icon-1.svg);
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px;
+  top: 60px;
+  left: 162px;
+}
+
+.sub-advantages-item .food::before {
+  content: "";
+
+  position: absolute;
+  background-image: url(../img/svg-sedona/icon-3.svg);
+  background-repeat: no-repeat;
+  width: 74px;
+  height: 70px;
+  top: 60px;
+  left: 163px;
+}
+
+.sub-advantages-item .souvenirs::before {
+  content: "";
+
+  position: absolute;
+  background-image: url(../img/svg-sedona/icon-2.svg);
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 76px;
+  top: 60px;
+  left: 168px;
+}
+
+.first-advantage {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.second-advantage {
+  padding-left: 48px;
+  padding-right: 49px;
+}
+
+.third-advantage {
+  padding-left: 95px;
+  padding-right: 97px;
+}
+
+.fourth-advantage {
+  padding-left: 69px;
+  padding-right: 69px;
+}
+
+.fifth-advantage {
+  padding-left: 77px;
+  padding-right: 77px;
+}
+
+.sub-advantages-text-first {
+  padding-left: 63px;
+  padding-right: 65px;
+}
+
+.sub-advantages-text-second {
+  padding-left: 59px;
+  padding-right: 59px;
+}
+
+.sub-advantages-text-third {
+  padding-left: 73px;
+  padding-right: 75px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 132px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  margin-left: 3px;
+  margin-right: 3px;
+
+  background-color: #81b3d2;
 }
