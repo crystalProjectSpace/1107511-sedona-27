@@ -806,3 +806,36 @@ color: #000000;
 .footer-copyright-button {
   padding-left: 6px;
 }
+
+/* Форма */
+
+.search-hotels {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 568px;
+}
+
+.search-hotels-label {
+  padding-left: 55px;
+}
+
+.search-hotels-number {
+  width: 38px;
+  height:38px;
+}
+
+.search-hotels-sign {
+  width: 38px;
+  height:38px;
+}
+
+.search {
+  margin-bottom: 55px;
+}
+
+.calendar {
+  position: relative;
+  left: -50px;
+  top: 5px;
+}
