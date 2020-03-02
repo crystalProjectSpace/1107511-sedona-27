@@ -142,10 +142,13 @@ img {
 }
 
 .search {
-  width: 558px;
+  width: 458px;
   height: 58px;
   background-color: #81b3d2;
   border: none;
+  margin-left: 55px;
+  margin-right: 55px;
+  padding: 0;
 }
 
 .search:hover {
@@ -281,7 +284,7 @@ color: #000000;
 .advantages,
 .search-hotels-label,
 .search-hotels-number,
-.footer-copyright-button {
+.footer-copyright {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -307,7 +310,7 @@ color: #000000;
 }
 
 .advantages,
-.footer-copyright-button {
+.footer-copyright {
   font-weight: 400;
   text-align: center;
 }
@@ -521,7 +524,7 @@ color: #000000;
 
 .preview {
   position: relative;
-  width: 586px;
+  width: 568px;
   margin: 0 auto;
   margin-left: 316px;
   margin-right: 316px;
@@ -529,7 +532,7 @@ color: #000000;
 
 .search-hotels {
   position: absolute;
-  width: 586px;
+  width: 568px;
   outline: 2px solid orange;
   margin-left: 316px;
   margin-right: 316px;
@@ -538,15 +541,18 @@ color: #000000;
 
 .main-footer {
   display: flex;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-height: 120px;
 }
 
 .contacts,
 .footer-social-list,
 .footer-copyright {
+  flex-grow: 1;
   width: 33%;
   outline: 2px solid orange;
 }
+
 
 /*Сетки для inner.html*/
 
@@ -763,6 +769,7 @@ color: #000000;
 .footer-social-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-left: 0;
 }
 
@@ -782,4 +789,20 @@ color: #000000;
   margin-right: 3px;
 
   background-color: #81b3d2;
+}
+
+.social-button:hover {
+    background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active path {
+  opacity: 0.3;
+}
+
+.footer-copyright-button {
+  padding-left: 6px;
 }
