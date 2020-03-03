@@ -430,7 +430,6 @@ color: #000000;
   flex-direction: column;
   align-items: center;
   min-height: 216px;
-  outline: 2px solid olive;
 }
 
 .slogan {
@@ -439,7 +438,6 @@ color: #000000;
   margin-left: 380px;
   margin-right: 380px;
   width: 440px;
-  outline: 2px solid olive;
 }
 
 .advantages {
@@ -449,7 +447,6 @@ color: #000000;
   margin-left: 355px;
   margin-right: 356px;
   padding: 0;
-  outline: 2px solid olive;
 }
 
 .advantages-list {
@@ -465,7 +462,6 @@ color: #000000;
   width: 400px;
   background-color: #81b3d2;
   outline: 2px solid red;
-  padding-top: 0;
   margin: 0;
 }
 
@@ -665,21 +661,26 @@ color: #000000;
   margin-bottom: 79px;
 }
 
-.bg-blue h2,
+/*.bg-blue h2,
 .bg-gray h2 {
-  margin-top: 46px;
+  padding-top: 46px;
   padding-left: 140px;
   padding-right: 140px;
 }
 
 .reverse h2 {
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+} */
+
+.bg-blue {
+  padding: 50px 60px 50px 60px;
 }
 
 .sub-advantages-item {
   width: 400px;
   position: relative;
-  padding-top: 145px;
+  padding: 140px 50px 70px 50px;
 }
 
 .sub-advantages-item .home::before {
@@ -716,46 +717,6 @@ color: #000000;
   height: 76px;
   top: 60px;
   left: 168px;
-}
-
-.first-advantage {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-.second-advantage {
-  padding-left: 48px;
-  padding-right: 49px;
-}
-
-.third-advantage {
-  padding-left: 95px;
-  padding-right: 97px;
-}
-
-.fourth-advantage {
-  padding-left: 69px;
-  padding-right: 69px;
-}
-
-.fifth-advantage {
-  padding-left: 77px;
-  padding-right: 77px;
-}
-
-.sub-advantages-text-first {
-  padding-left: 63px;
-  padding-right: 65px;
-}
-
-.sub-advantages-text-second {
-  padding-left: 59px;
-  padding-right: 59px;
-}
-
-.sub-advantages-text-third {
-  padding-left: 73px;
-  padding-right: 75px;
 }
 
 .contacts {
