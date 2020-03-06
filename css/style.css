@@ -249,7 +249,8 @@ color: #000000;
 .range-number-max,
 .hotels-button,
 .hotels-rating,
-.figure.white {
+.figure.white,
+.figure {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -545,7 +546,8 @@ color: #000000;
 .footer-social-list,
 .footer-copyright {
   flex-grow: 1;
-  width: 33%;
+  width: 400px;
+  margin: 0;
   outline: 2px solid orange;
 }
 
@@ -638,18 +640,13 @@ color: #000000;
 }
 
 /*Микросетки*/
+
 .nav-item:nth-last-child(2) {
   margin-left: 100px;
 }
 .nav-item:last-child,
 .nav-item:nth-last-child(2) {
   text-align: right;
-}
-
-.figure,
-.figure.white {
-  display: block;
-  text-align: center;
 }
 
 .welcome {
@@ -661,21 +658,41 @@ color: #000000;
   margin-bottom: 79px;
 }
 
-/*.bg-blue h2,
-.bg-gray h2 {
-  padding-top: 46px;
-  padding-left: 140px;
-  padding-right: 140px;
+/*Блок преимуществ*/
+
+.figure,
+.figure.white {
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 23px;
+  padding: 0;
 }
 
-.reverse h2 {
-  padding-left: 0;
-  padding-right: 0;
-} */
-
-.bg-blue {
-  padding: 50px 60px 50px 60px;
+.advantages-title,
+.advantages-title.white {
+  margin-top: 0;
+  margin-bottom: 23px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
+
+.advantages-text,
+.advantages-text.white {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-blue,
+.bg-gray {
+  padding: 50px 60px 60px 60px;
+}
+
+.bridge {
+  padding: 50px 48px 60px 48px;
+}
+
+/*Подсписок с иконками*/
 
 .sub-advantages-item {
   width: 400px;
@@ -719,6 +736,8 @@ color: #000000;
   left: 168px;
 }
 
+/*Футер*/
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -748,7 +767,6 @@ color: #000000;
   height: 48px;
   margin-left: 3px;
   margin-right: 3px;
-
   background-color: #81b3d2;
 }
 
@@ -777,6 +795,11 @@ color: #000000;
   width: 568px;
 }
 
+.search-hotels-input {
+  border: none;
+  background-color: #f2f2f2;
+}
+
 .search-hotels-label {
   padding-left: 55px;
 }
@@ -789,6 +812,13 @@ color: #000000;
 .search-hotels-sign {
   width: 38px;
   height:38px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.search-hotels-number {
+  margin: 0;
+  padding: 0;
 }
 
 .search {
@@ -797,6 +827,13 @@ color: #000000;
 
 .calendar {
   position: relative;
+  border: none;
   left: -50px;
   top: 5px;
+  fill: #a9a9a9;
+}
+
+.more,
+.less {
+  color: #a9a9a9;
 }
