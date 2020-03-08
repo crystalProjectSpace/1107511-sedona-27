@@ -62,18 +62,22 @@
                   </ul>
                 </fieldset>
                 <fieldset class="hotels-filter-fieldset">
-                  <legend class="hotels-filter-title">Стоимость в сутки (Р):</legend>
-                  <div class="range-slider">
-                    <label class="range-label-min" for="range-min">От</label>
-                    <input class="range-number-min" type="number" name="min" value="0" id="range-min">
-                    <label class="range-label-max" for="range-max">До</label>
-                    <input class="range-number-max" type="number" name="max" value="3000" id="range-max">
-                    <div class="range-slider-track">
-                        <!--   <div class="range-slider-pin-min"><img src="img/svg-sedona/filter-button.svg"></div>
-            <div class="range-slider-pin-max"><img src="img/svg-sedona/filter-button.svg"></div> -->
+                  <div class="hotels-filter-range">
+                  <div class="hotels-filter-title hotels-filter-title-right">Стоимость в сутки (Р):</div>
+                    <div class="range-slider-price"><label class="range-label-min">От
+                    <input class="range-number-min" type="number" name="min" value="0" id="range-min"></label>
+                    <label class="range-label-max">До
+                    <input class="range-number-max" type="number" name="max" value="3000" id="range-max"></label>
                     </div>
-                  </div>
+                    <div class="range-slider-track">
+                      <div class="track">
+                        <div class="bar"></div>
+                        </div>
+                      <div class="range-slider-pin range-slider-pin-min"><img src="img/svg-sedona/filter-button.svg"></div>
+                      <div class="range-slider-pin range-slider-pin-max"><img src="img/svg-sedona/filter-button.svg"></div>
+                    </div>
                   <button class="button-show" type="submit">ПОКАЗАТЬ</button>
+                </div>
                 </fieldset>
             </form>
         </section>
@@ -98,7 +102,12 @@
                     <div class="price"><p class="hotels-text">от 4000 р.</p>
                     <a class="hotels-button button-reservation" href="#">Забронировать</a></div></div></div>
                     <div class="hotels-rating-right">
-                        <img src="img/svg-sedona/star.svg" height="18" width="17" alt="star">
+                        <div class="stars">
+                          <img src="img/svg-sedona/star.svg" height="18" width="17" alt="4 out of 5 stars">
+                          <img src="img/svg-sedona/star.svg" height="18" width="17" alt="">
+                          <img src="img/svg-sedona/star.svg" height="18" width="17" alt="">
+                          <img src="img/svg-sedona/star.svg" height="18" width="17" alt="">
+                        </div>
                         <span class="hotels-rating">Рейтинг: 8,5</span>
                     </div>
                 </li>
@@ -110,7 +119,11 @@
                     <div class="price"><p class="hotels-text">от 3000 р.</p>
                     <a class="hotels-button button-reservation" href="#">Забронировать</a></div></div></div>
                     <div class="hotels-rating-right">
-                        <img src="img/svg-sedona/star.svg" height="18" width="17" alt="star">
+                        <div class="stars">
+                          <img src="img/svg-sedona/star.svg" height="18" width="17" alt="3 out of 5 stars">
+                          <img src="img/svg-sedona/star.svg" height="18" width="17" alt="">
+                          <img src="img/svg-sedona/star.svg" height="18" width="17" alt="">
+                        </div>
                         <span class="hotels-rating">Рейтинг: 8,9</span>
                     </div>
                 </li>
@@ -122,7 +135,10 @@
                     <div class="price"><p class="hotels-text">от 2000 р.</p>
                     <a class="hotels-button button-reservation" href="#">Забронировать</a></div></div></div>
                     <div class="hotels-rating-right">
-                        <img src="img/svg-sedona/star.svg" height="18" width="17" alt="star">
+                        <div class="stars">
+                          <img src="img/svg-sedona/star.svg" height="18" width="17" alt="2 out of 5 stars">
+                          <img src="img/svg-sedona/star.svg" height="18" width="17" alt="">
+                        </div>
                         <span class="hotels-rating">Рейтинг: 9,2</span>
                     </div>
                 </li>
