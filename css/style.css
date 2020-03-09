@@ -50,7 +50,6 @@ img {
 }
 
 .visually-hidden {
-  display: none;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -180,7 +179,7 @@ img {
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
   outline: none;
-  padding-left: 10px;
+  padding-left: 11px;
 }
 
 .search-hotels-input:-ms-input-placeholder {
@@ -409,6 +408,7 @@ color: #000000;
   width: 1200px;
   margin: auto;
   justify-content: center;
+  position: relative;
 }
 
 .nav-list {
@@ -429,8 +429,8 @@ color: #000000;
 .logo {
   width: 140px;
   height: 71px;
-  margin: auto;
   position: absolute;
+  margin: auto;
 }
 
 .info {
@@ -973,7 +973,7 @@ color: #000000;
 
 .hotels-filter-fieldset:nth-child(2) {
   width: 136px;
-  margin-right: 348px;
+  margin-right: 340px;
 }
 
 /*Чекбоксы*/
@@ -1018,6 +1018,24 @@ color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E%0A");
   left: 0;
   outline: 2px solid rgba(225, 225, 225, 0.3);
+}
+
+.check-input:focus ~ .checkbox {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
+  left: 0;
+  outline: 2px solid #81b3d2;
+}
+
+.check-input:checked:focus ~ .checkbox {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E%0A");
+  left: 0;
+  outline: 2px solid #81b3d2;
 }
 
 .check-input:active ~ .checkbox {
@@ -1115,6 +1133,10 @@ color: #000000;
   top: 4px;
 }
 
+.sorting-list-link:focus svg {
+  border: 2px solid #81b3d2;
+}
+
 /*Ползунки*/
 
 .hotels-filter-range {
@@ -1154,9 +1176,9 @@ color: #000000;
 }
 
 .range-slider-price label {
-  display: inline-inline-block;
+  display: inline;
 
-  line-height: 38px;
+  line-height: 30px;
   vertical-align: top;
 
   cursor: pointer;
@@ -1170,9 +1192,12 @@ color: #000000;
 
 .range-slider-price input {
   width: 50px;
-  margin: 0;
+  margin: 5px auto;
   color: inherit;
   font: inherit;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 100%;
   background: none;
   border: none;
 }
@@ -1241,5 +1266,5 @@ color: #000000;
 }
 
 .hotels-name {
-  width: -moz-fit-content; width: -webkit-fit-content; width: fit-content
+  width: -moz-fit-content; width: -webkit-fit-content; width: fit-content;
 }
