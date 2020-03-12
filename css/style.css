@@ -338,7 +338,7 @@
      align-items: center;
 }
  .slogan {
-     margin-top: 61px;
+     margin-top: 59px;
      margin-bottom: 18px;
      margin-left: 380px;
      margin-right: 380px;
@@ -347,7 +347,7 @@
  .advantages {
      width: 489px;
      margin-top: 10px;
-     margin-bottom: 56px;
+     margin-bottom: 51px;
      margin-left: 355px;
      margin-right: 356px;
      padding: 0;
@@ -414,6 +414,7 @@
 }
  .block-over-map {
      width: 1200px;
+     padding-bottom: 21px;
 }
  .block-over-form {
      width: 434px;
@@ -421,7 +422,10 @@
      margin-bottom: 26px;
      margin-left: 383px;
      margin-right: 383px;
-     padding-top: 28.5px;
+     padding-top: 50px;
+}
+.interest {
+     margin-bottom: 24px;
 }
  .preview {
      position: relative;
@@ -429,12 +433,14 @@
      margin: 0 auto;
      margin-left: 316px;
      margin-right: 316px;
+     top: 21px;
 }
  .search-hotels {
      position: absolute;
      width: 568px;
      margin-left: 316px;
      margin-right: 316px;
+     bottom: 207px;
      background: #ffffff;
      box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
@@ -545,9 +551,8 @@
      flex-direction: column;
      -ms-flex-wrap: wrap;
      flex-wrap: wrap;
-     width: 760px;
+     width: 780px;
      margin-left: 30px;
-     margin-right: 20px;
      padding: 0;
 }
  .hotels-name h3 {
@@ -615,12 +620,12 @@
      display: block;
      text-align: center;
      margin-top: 0;
-     margin-bottom: 23px;
+     margin-bottom: 21px;
      padding: 0;
 }
  .advantages-title, .advantages-title.white {
      margin-top: 0;
-     margin-bottom: 23px;
+     margin-bottom: 24px;
      padding-left: 60px;
      padding-right: 60px;
 }
@@ -629,16 +634,19 @@
      padding: 0;
 }
  .bg-blue, .bg-gray {
-     padding: 50px 60px 60px 60px;
+     padding: 47px 60px 59px 60px;
 }
  .bridge {
-     padding: 50px 48px 60px 48px;
+     padding: 46px 48px 60px 48px;
 }
 
+ .sub-advantages-title {
+     margin-bottom: 23px;
+ }
  .sub-advantages-item {
      width: 400px;
      position: relative;
-     padding: 140px 50px 70px 50px;
+     padding: 140px 50px 69px 50px;
 }
  .sub-advantages-item .home::before {
      content: "";
@@ -667,7 +675,7 @@
      background-repeat: no-repeat;
      width: 64px;
      height: 76px;
-     top: 60px;
+     top: 56px;
      left: 168px;
 }
 /*Футер*/
@@ -782,22 +790,26 @@
 }
  .search-hotels-input.input-date {
      padding-left: 13px;
+     padding-top: 2px;
 }
  .search-hotels-number {
      width: 38px;
-     height:38px;
+     height: auto;
      margin: 0;
      padding: 0;
 }
  .search-hotels-adult {
      padding-right: 41px;
+     padding-top: 9px;
 }
  .search-hotels-child {
      padding-left: 53px;
      padding-right: 26px;
+     padding-top: 9px;
 }
  .search-hotels-sign {
      position: relative;
+     top: 5px;
      width: 38px;
      height:38px;
      border: none;
