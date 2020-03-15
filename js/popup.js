@@ -6,9 +6,6 @@ var departure = form.querySelector("[name=departure-date]");
 var adult = form.querySelector("[name=adult-number]");
 var child = form.querySelector("[name=child-number]");
 
-
-
-
 document.addEventListener("DOMContentLoaded", function(evt) {
   form.classList.add("visually-hidden");
 });
@@ -30,8 +27,12 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-button.addEventListener("submit", function(evt){
-  if (!arrival-date.value || !departure-date.value || !adult-number.value || !child-number.value) {
+button.addEventListener("click", function(evt){
+  if (!adult-number.value || !child-number.value) {
     evt.preventDefault();
+    alert("Только 2");
+    console.log("Нужно ввести данные");
+  } else {
+    localStorage.setItem("search-hotels-number", adult-number.value);
   }
 });
