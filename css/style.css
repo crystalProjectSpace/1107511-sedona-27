@@ -1142,6 +1142,12 @@
      width: fit-content;
 }
 
+.maps {
+  height: 600px;
+  background-image: url(../img/map.png);
+  background-color: #81b3d2;
+}
+
  /*Для JS*/
 .search-hotels-bounce {
   animation: bounce 3s;
@@ -1156,4 +1162,8 @@
   100% {
     transform: scale(1) translateY(0);
   }
+}
+
+.search-hotels-error {
+  
 }
