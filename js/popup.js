@@ -29,7 +29,7 @@ window.addEventListener("keydown", function (evt) {
 });
 
 form.addEventListener("submit", function(evt){
-  if (!adult.value || !child.value) {
+  if (!arrival.value || !departure.value || !adult.value ||  !child.value) {
     evt.preventDefault();
     alert("Только 2");
     console.log("Нужно ввести данные");
