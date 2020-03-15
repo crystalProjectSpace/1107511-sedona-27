@@ -16,6 +16,7 @@ link.addEventListener("click", function(evt) {
   form.classList.remove("search-hotels-bounce");
   form.offsetWidth = form.offsetWidth;
   form.classList.add("search-hotels-bounce");
+  arrival.focus();
 });
 
 window.addEventListener("keydown", function (evt) {
@@ -27,12 +28,12 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-button.addEventListener("click", function(evt){
-  if (!adult-number.value || !child-number.value) {
+form.addEventListener("submit", function(evt){
+  if (!adult.value || !child.value) {
     evt.preventDefault();
     alert("Только 2");
     console.log("Нужно ввести данные");
-  } else {
-    localStorage.setItem("search-hotels-number", adult-number.value);
+} else {
+    localStorage.setItem("search-hotels-number", adult.value);
   }
 });
