@@ -30,7 +30,7 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-form.addEventListener("submit", function(evt){
+button.addEventListener("submit", function(evt){
   if (!arrival-date.value || !departure-date.value || !adult-number.value || !child-number.value) {
     evt.preventDefault();
   }
