@@ -1,7 +1,12 @@
 var link = document.querySelector(".preview");
 var form = document.querySelector(".search-hotels");
 var button = document.querySelector(".search");
-var input = document.querySelector("input[text]");
+var arrival = form.querySelector("[name=arrival-date]");
+var departure = form.querySelector("[name=departure-date]");
+var adult = form.querySelector("[name=adult-number]");
+var child = form.querySelector("[name=child-number]");
+
+
 
 
 document.addEventListener("DOMContentLoaded", function(evt) {
@@ -26,7 +31,7 @@ window.addEventListener("keydown", function (evt) {
 });
 
 form.addEventListener("submit", function(evt){
-  if (!input.value) {
+  if (!arrival-date.value || !departure-date.value || !adult-number.value || !child-number.value) {
     evt.preventDefault();
   }
 });
