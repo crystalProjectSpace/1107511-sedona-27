@@ -1141,29 +1141,36 @@
      width: -webkit-fit-content;
      width: fit-content;
 }
-
-.maps {
-  height: 600px;
-  background-image: url(../img/map.png);
-  background-color: #81b3d2;
+ .maps {
+     height: 600px;
+     background-image: url(../img/map.png);
+     background-color: #81b3d2;
 }
-
- /*Для JS*/
-.search-hotels-bounce {
-  animation: bounce 3s;
+/*Для JS*/
+ .search-hotels-bounce {
+     animation: bounce 3s;
 }
-
-@keyframes bounce {
-  0% {
-    transform: scaleY(0.5) translateY(-90px);
-    transform-origin: top;
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1) translateY(0);
-  }
+ @keyframes bounce {
+     0% {
+         transform: scaleY(0.5) translateY(-90px);
+         transform-origin: top;
+         opacity: 0;
+    }
+     100% {
+         transform: scale(1) translateY(0);
+    }
 }
-
-.search-hotels-error {
-  
+ .search-hotels-error {
+     animation: shake 1s;
+}
+ @keyframes shake {
+     0%, 100% {
+         transform: translateX(0);
+    }
+     10%, 30%, 50%, 70%, 90% {
+         transform: translateX(-5px);
+    }
+     20%, 40%, 60%, 80% {
+         transform: translateX(5px);
+    }
 }
