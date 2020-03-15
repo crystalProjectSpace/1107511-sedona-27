@@ -422,6 +422,7 @@
 }
  .preview {
      position: relative;
+     z-index: 10;
      width: 568px;
      margin: 0 auto;
      margin-left: 316px;
@@ -1140,4 +1141,18 @@
      width: -webkit-fit-content;
      width: fit-content;
 }
- 
+
+ /*Для JS*/
+.search-hotels-bounce {
+  animation: bounce 3s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-90px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
