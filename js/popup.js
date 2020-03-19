@@ -1,35 +1,79 @@
-var link = document.querySelector(".preview");
-var form = document.querySelector(".search-hotels");
-var arrival = form.querySelector("[name=arrival-date]");
-var departure = form.querySelector("[name=departure-date]");
-var adult = form.querySelector("[name=adult-number]");
-var child = form.querySelector("[name=child-number]");
-
-document.addEventListener("DOMContentLoaded", function(evt) {
-	form.classList.add("visually-hidden");
-});
-link.addEventListener("click", function(evt) {
-	evt.preventDefault();
-	form.classList.toggle("visually-hidden");
-	form.classList.remove("search-hotels-bounce");
-	form.offsetWidth = form.offsetWidth;
-	form.classList.add("search-hotels-bounce");
-	arrival.focus();
-});
-window.addEventListener("keydown", function(evt) {
-	if(evt.keyCode === 27) {
-		evt.preventDefault();
-		if(form.classList.contains("search-hotels")) {
-			form.classList.add("visually-hidden");
+(function(){
+	class formHandler {
+		constructor() {
+			this.form = null
+			this.arrival = null
+			this.departure = null
+			this.adult = null
+			this.child = null
+			this.link = null
+		}
+	// спрятать форму
+		hideForm() {
+			this.form.classList.add("visually-hidden")
+		}
+	// инициировали форму
+		init(form, link) {
+			this.form = form
+			this.link = link
+			this.arrival = this.form.querySelector('[name=arrival-date')
+			this.departure = this.form.querySelector('[name=departure-date]')
+			this.child = this.form.querySelector('[name=child-number]')
+			this.adult = this.form.querySelector('[name=adult-number]')
+		
+			this.link.onclick = event => { this.linkHandler(event) }
+		
+			this.form.onsubmit = event => { this.submitHandler(event) }
+		
+			window.onkeydown = event => { this.kbdInputHandler(event) }
+			
+			return this
+		}
+	// обработчик клика по ссылке	
+		linkHandler(event) {
+			const e = event || window.event
+			e.preventDefault()
+			this.form.classList.toggle("visually-hidden")
+			this.form.classList.remove("search-hotels-bounce")
+			this.form.classList.add("search-hotels-bounce")
+			this.arrival.focus()
+		}
+	// проверка на валидность формы	
+		formValid() {
+			return this.arrival.value &&
+				this.departure.value &&
+				this.adult.value &&
+				this.child.value
+		}
+	// обработка отправки формы	
+		submitHandler(event) {
+			if(!this.formValid()) {
+				const e = event || window.event
+				e.preventDefault()
+				console.log("Нужно ввести данные")
+				this.form.classList.remove("search-hotels-error")
+				this.form.classList.add("search-hotels-error")
+			}
+		}
+	// обработка нажатия enter	
+		kbdInputHandler(event) {
+			const e = event || window.event()
+			if( e.keyCode === 27) {
+				e.preventDefault()
+				if(this.form.classList.contains("search-hotels")) {
+					this.form.classList.add("visually-hidden")
+				}
+			}
 		}
 	}
-});
-form.addEventListener("submit", function(evt) {
-	if(!arrival.value || !departure.value || !adult.value || !child.value) {
-		evt.preventDefault();
-		console.log("Нужно ввести данные");
-		form.classList.remove("search-hotels-error");
-		form.offsetWidth = form.offsetWidth;
-		form.classList.add("search-hotels-error");
-	}
-});
+	
+	const myFormHandler = new formHandler()
+	myFormHandler
+	.init(
+		document.querySelector('.search-hotels'),
+		document.querySelector('.preview')
+	)
+	.hideForm()
+})()
+
+
