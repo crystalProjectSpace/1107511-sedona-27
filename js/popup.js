@@ -24,8 +24,6 @@
 			this.link.onclick = event => { this.linkHandler(event) }
 		
 			this.form.onsubmit = event => { this.submitHandler(event) }
-		
-			window.onkeydown = event => { this.kbdInputHandler(event) }
 			
 			return this
 		}
@@ -53,16 +51,8 @@
 				console.log("Нужно ввести данные")
 				this.form.classList.remove("search-hotels-error")
 				this.form.classList.add("search-hotels-error")
-			}
-		}
-	// обработка нажатия enter	
-		kbdInputHandler(event) {
-			const e = event || window.event()
-			if( e.keyCode === 27) {
-				e.preventDefault()
-				if(this.form.classList.contains("search-hotels")) {
-					this.form.classList.add("visually-hidden")
-				}
+			} else {
+				this.hideForm()
 			}
 		}
 	}
